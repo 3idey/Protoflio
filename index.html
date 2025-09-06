@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ahmed Elaidy - Computer Science Student & Backend Developer Portfolio">
+  <title>Ahmed Elaidy | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <h1><span class="arabic-name">عايدى</span></h1>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <span class="menu-icon">&#9776;</span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <div class="profile-picture">
+          <img src="assets/profile.jpg" alt="Ahmed Elaidy profile photo" loading="lazy">
+        </div>
+        <h1>Ahmed Elaidy</h1>
+        <p class="title">Computer Science Student & Backend Developer</p>
+        <p class="brief">I'm a third-year Computer Science student with a strong foundation in software development,
+          specializing in C++. I'm a passionate Backend Developer and enjoy competitive programming.</p>
+        <div class="contact-info">
+          <span>📞 +20 122 760 3517</span>
+          <span>📧 elaidya225@gmail.com</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>I'm a dedicated Computer Science student at Zagazig University with a passion for backend development and
+          competitive programming. I enjoy solving complex problems and building efficient software solutions using
+          modern technologies.</p>
+      </div>
+    </section>
+
+    <section id="education" class="education">
+      <div class="container">
+        <h2>Education</h2>
+        <div class="education-item">
+          <h3>Bachelor's Degree in Computer Science</h3>
+          <p class="institution">Faculty of Computers and Informatics, Zagazig University</p>
+          <p class="duration">2023 - 2027</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="experience">
+      <div class="container">
+        <h2>Experiences</h2>
+        <div class="experience-item">
+          <h3>Mentor at ICPC Zagazig Community</h3>
+          <p class="duration">Jan 2024 - Present</p>
+          <ul>
+            <li>Guided students in competitive programming techniques and problem-solving strategies.</li>
+            <li>Organized practice sessions and coding competitions to enhance skills.</li>
+            <li>Provided feedback on code submissions and helped improve overall performance.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <h2>Other Experience</h2>
+        <div class="experience-item">
+          <ul>
+            <li>Contestant - Ecpc 2025 - Present</li>
+            <li>Member – IEEE CS Brand Ambassadors Backend Track</li>
+            <li>Achieved top ranks in several contests and improved coding proficiency.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <article class="project-card featured-project">
+            <h3>🖼️ Dot-Poster E-commerce Platform</h3>
+            <p class="project-date">2024 - Present</p>
+            <p>A comprehensive e-commerce platform built with Laravel 12 for selling posters and artwork online.
+              Features modern UI/UX, multi-role system (Customer/Admin/Vendor), Stripe payment integration, Google
+              OAuth, email notifications, and advanced product management with image galleries.</p>
+            <div class="project-features">
+              <h4>Key Features:</h4>
+              <ul>
+                <li>🛒 Smart shopping cart with wishlist system</li>
+                <li>💳 Secure Stripe payments + cash on delivery</li>
+                <li>👥 Multi-role system (Customer/Admin/Vendor)</li>
+                <li>🔐 Google OAuth authentication</li>
+                <li>📧 Automated email notifications</li>
+                <li>⭐ Product reviews and rating system</li>
+                <li>📱 Fully responsive design</li>
+              </ul>
+            </div>
+            <div class="project-tech">
+              <span>Laravel 12</span>
+              <span>PHP 8.2+</span>
+              <span>MySQL</span>
+              <span>Stripe API</span>
+              <span>Google OAuth</span>
+              <span>JavaScript</span>
+              <span>CSS3</span>
+              <span>Responsive Design</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/3idey/dot-poster" target="_blank" class="project-link primary">View on
+                GitHub</a>
+            </div>
+          </article>
+          <article class="project-card featured-project">
+            <h3>📖 Quran Playlist Manager</h3>
+            <p class="project-date">C++ Application</p>
+            <p>The Quran Playlist Manager is a C++ application designed to manage and organize playlists of Quranic surahs. It allows users to create playlists, add or remove surahs, update the order of surahs, and play surahs with basic playback controls.</p>
+            <div class="project-features">
+              <h4>Key Features:</h4>
+              <ul>
+                <li>Create Playlists: Add new playlists with custom names.</li>
+                <li>Add Surahs: Add surahs to existing playlists with details like name, type, and audio path.</li>
+                <li>Remove Surahs: Remove surahs from playlists.</li>
+                <li>Update Order: Change the order of surahs within a playlist.</li>
+                <li>Play Surahs: Play surahs with controls for play, pause, next, and previous.</li>
+                <li>Save and Load Playlists: Save playlists to a file and load them back.</li>
+                <li>Display Playlists: View all playlists and their surahs.</li>
+              </ul>
+            </div>
+            <div class="project-tech">
+              <span>C++</span>
+              <span>Windows (winmm.lib for audio)</span>
+              <span>WAV Audio</span>
+              <span>OOP</span>
+              <span>Doubly Linked List</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/3idey/Simple-Quran-Player" target="_blank" class="project-link primary">View on GitHub</a>
+            </div>
+          </article>
+          <article class="project-card featured-project">
+            <h3>🦸‍♂️ So Many Questions – Comic Q&A Platform</h3>
+            <p class="project-date">2025</p>
+            <p>A community-driven Q&amp;A platform for comic book fans to ask, answer, and discuss their favorite stories, characters, and fan theories.</p>
+            <div class="project-features">
+              <h4>Key Features:</h4>
+              <ul>
+                <li>Authentication: register, login, logout, profile</li>
+                <li>Ask questions with tags</li>
+                <li>Answer questions and mark a best answer (by question owner)</li>
+                <li>Threaded replies to answers (comments)</li>
+                <li>Paginated questions feed on Home</li>
+                <li>Polished UI with Tailwind; comic background on auth and profile pages</li>
+              </ul>
+            </div>
+            <div class="project-tech">
+              <span>Laravel 12</span>
+              <span>PHP 8.2+</span>
+              <span>Blade Components</span>
+              <span>Tailwind CSS v4</span>
+              <span>Vite</span>
+              <span>MySQL/PostgreSQL/SQLite</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/3idey/So-Many-Questions" class="project-link primary">View on GitHub</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Programming Languages</h3>
+            <div class="skill-tags">
+              <span>C++</span>
+              <span>PHP</span>
+              <span>HTML</span>
+              <span>JavaScript</span>
+              <span>CSS</span>
+              <span>SQL</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Frameworks & Tools</h3>
+            <div class="skill-tags">
+              <span>Laravel</span>
+              <span>TailwindCSS</span>
+              <span>MySQL</span>
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>Linux</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Core Competencies</h3>
+            <div class="skill-tags">
+              <span>Data Structures & Algorithms</span>
+              <span>Object-Oriented Programming</span>
+              <span>Problem-Solving</span>
+              <span>Video Editing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Get In Touch</h2>
+        <div class="contact-grid">
+          <div class="contact-item">
+            <h3>📧 Email</h3>
+            <a href="mailto:elaidya225@gmail.com">elaidya225@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <h3>📞 Phone</h3>
+            <a href="tel:+201227603517">+20 122 760 3517</a>
+          </div>
+          <div class="contact-item">
+            <h3>💼 LinkedIn</h3>
+            <a href="https://linkedin.com/in/a7md3idy" target="_blank">linkedin.com/in/a7md3idy</a>
+          </div>
+          <div class="contact-item">
+            <h3>💻 GitHub</h3>
+            <a href="https://github.com/3idey" target="_blank">github.com/3idey</a>
+          </div>
+          <div class="contact-item">
+            <h3>🏆 Codeforces</h3>
+            <a href="https://codeforces.com/profile/NE0N22" target="_blank">codeforces.com/profile/NE0N22</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Ahmed Elaidy. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
